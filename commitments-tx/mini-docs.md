@@ -31,7 +31,7 @@ Also, it will add the user that committed to the list of owners, so in case ther
 
 
 ## Conclusive thoughts
-There are probably more optimized way to do this, but my biggest concern is that there is not a clear and well-defined way to implement a commitment model to a contract: depending on the situation, the infromation that the `process` part needs is different, and there might be different ways to query that data.
-Because of this, many programmers who might not truly understand the many advantages that off-chain contracts have might see the fact of needing to implement by scratch a commitment model without any clear documentation too much of a pain compared to on-chain contracts.
+There are probably more optimized way to do this, but my biggest concern is that there is not a clear and well-defined way to implement a commitment model to a contract: depending on the situation, the infromation that the `process` part needs could be different, and there might be different ways to query that data.
+Because of this, many programmers who might not truly understand the many advantages that off-chain contracts have, might see the fact of needing to implement by scratch a commitment model without any clear documentation too much of a pain compared to on-chain contracts.
 
-Also, since there is no clear way to implement such a model, I have some security concerns since it would be easy to miss something between the two transactions.
+Also, since there is no clear way to implement such a model, I have some security concerns since it would be easier to miss something between the two transactions that could cause an exploitation of the contract.
